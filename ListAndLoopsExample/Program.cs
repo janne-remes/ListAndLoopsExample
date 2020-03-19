@@ -8,10 +8,16 @@ namespace ListAndLoopsExample
         static void Main(string[] args)
         {
             var dh = new DataHandler();
-            var kahvi = dh.CreateCoffee();
-            dh.coffees.Add(kahvi);
 
-            var paketti = new Coffee("Pressa", 3.4, Coffee.Roast.light, "Costa Rica");
+            dh.FillPersonsWithTestData();
+
+            dh.AddPersonToList();
+            dh.PrintPersonList();
+
+            //var kahvi = dh.createcoffee();
+            //dh.coffees.add(kahvi);
+
+            //var paketti = new Coffee("Pressa", 3.4, Coffee.Roast.light, "Costa Rica");
 
             //var pakeTti1 = new Coffee("Juhlamokka");
             //var paketti2 = new Coffee("Presidentti");

@@ -6,7 +6,7 @@ namespace ListAndLoopsExample
 {
     class Coffee
     {
-        enum Roast
+        /*enum Roast
         {
             light,
             lightmedium,
@@ -36,6 +36,6 @@ namespace ListAndLoopsExample
             this.price = price;
             this.roast = roast;
             this.importer = importer;
-        }
+        }*/
     }
 }
