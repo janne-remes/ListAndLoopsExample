@@ -11,8 +11,20 @@ namespace ListAndLoopsExample
 
             dh.FillPersonsWithTestData();
 
-            dh.AddPersonToList();
-            dh.PrintPersonList();
+            MainMenu mainMenu = new MainMenu(dh);
+            mainMenu.InitializeMainMenu();
+            
+            //dh.AddPersonToList();
+            //dh.PrintPersonList();
+
+            //Console.WriteLine($"\n PAINA MITÄ TAHANSA PAINIKETTA JATKAAKSESI");
+            //Console.ReadKey();
+
+            //Console.Clear();
+
+            //var person = dh.SelectPersonFromList();
+            //Console.WriteLine("\n");
+            //Console.WriteLine($"Valittu: {person.firstName} {person.lastName} | {person.phone} | {person.email}");
 
             //var kahvi = dh.createcoffee();
             //dh.coffees.add(kahvi);

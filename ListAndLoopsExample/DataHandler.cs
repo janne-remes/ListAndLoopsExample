@@ -41,10 +41,21 @@ namespace ListAndLoopsExample
 
         public void PrintPersonList()
         {
+            //FillPersonsWithTestData();
             for(int i = 0; i < this.persons.Count; i++)
             {
                 Console.WriteLine($"{i+1}. {this.persons[i].firstName} {this.persons[i].lastName}");
             }
+        }
+
+        public Person SelectPersonFromList()
+        {
+            PrintPersonList();
+            Console.WriteLine("Valitse henkilön numero listalta");
+            var selected = int.Parse(Console.ReadLine());
+            //Console.WriteLine($"Valittu: {person.firstName} {person.lastName} | {person.phone} | {person.email}");
+            return this.persons[selected - 1];
+            
         }
 
         /*public Coffee CreateCoffee()
