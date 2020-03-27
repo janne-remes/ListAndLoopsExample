@@ -43,9 +43,21 @@ namespace ListAndLoopsExample
                     dataHandler.AddPersonToList();
                     break;
                 case 2:
-                    dataHandler.PrintPersonList();
-                    //dataHandler.SelectPersonFromList();
+                    //dataHandler.PrintPersonList();
+                    dataHandler.SelectPersonFromList();
                     //Console.WriteLine($"Valittu: {person.firstName} {person.lastName} | {person.phone} | {person.email}");
+                    break;
+                case 3:
+                    dataHandler.AddNewCompanyToList();
+                    break;
+                case 4:
+                    dataHandler.PrintCompanyList();
+                    break;
+                case 5:
+                    dataHandler.AddNewCoffeeToList();
+                    break;
+                case 6:
+                    dataHandler.PrintCoffeeList();
                     break;
                 case 0:
                     return false;
